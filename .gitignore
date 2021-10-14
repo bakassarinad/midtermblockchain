@@ -1,0 +1,11 @@
+#Virtenv
+venv/
+
+#DataBase
+db.sqlite3
+
+__pycache__\
+*.pyc
+*.pyo
+.jython_cache\
+*.pkc
