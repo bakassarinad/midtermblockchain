@@ -6,4 +6,4 @@ class GoodSerializer(serializers.ModelSerializer):
     model = Good
     class Meta:
         model = Good
-        fields = ['name', 'quantity', 'capacity']
+        fields = ['name', 'capacity']
