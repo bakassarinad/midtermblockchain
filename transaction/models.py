@@ -7,8 +7,7 @@ from users.models import User
 
 class Order(models.Model):
     name = models.CharField(max_length=50)
-    Description = models.CharField(max_length=400)
-    time_start = models.DateField(default=datetime.now)
+    time_start = models.DateField(auto_now_add=True)
     packaging = models.IntegerField(default=3)
     transit = models.IntegerField(default=5)
     good = models.ForeignKey(Good, on_delete=CASCADE)
