@@ -10,7 +10,8 @@ class OrderSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Order
-        fields = "__all__"
+        fields = ['time_start', 'packaging', 'transit', 'good', 'quantity', 'status']
         read_only_fields = ['packaging', 'transit', 'status']
+        
         
     

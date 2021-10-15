@@ -11,7 +11,7 @@ class Order(models.Model):
     packaging = models.IntegerField(default=3)
     transit = models.IntegerField(default=5)
     good = models.ForeignKey(Good, on_delete=CASCADE)
-    user = models.ForeignKey(User, on_delete=CASCADE)
+    user = models.ForeignKey(User, on_delete=CASCADE, default=1)
     quantity = models.PositiveIntegerField(default=0)
     status = models.CharField(max_length=30, default='not confirmed')
 
