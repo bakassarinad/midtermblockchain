@@ -8,4 +8,5 @@ from datetime import datetime
 class OrderViewCreate(viewsets.ModelViewSet):
     
     serializer_class = OrderSerializer
-
+    queryset = Order.objects.all()
+    
